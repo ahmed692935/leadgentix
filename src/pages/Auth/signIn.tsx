@@ -34,11 +34,6 @@ const SignIn: React.FC = () => {
     }
   };
 
-  //   const onSubmit: SubmitHandler<SignInFormInputs> = (data) => {
-  //     console.log("Form Submitted:", data);
-  //     reset();
-  //   };
-
   const navigate = useNavigate();
 
   const handleNavigate = () => {

@@ -147,9 +147,9 @@ const SignUp: React.FC = () => {
         {/* Sign In Button */}
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-2 bg-gradient-to-l from-[#05A3A9] to-[#6BEE2E] text-white py-2 rounded-lg transition-all"
+          className="w-full cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-l from-[#05A3A9] to-[#6BEE2E] text-white py-2 rounded-lg transition-all"
         >
-          Sign In
+          Sign Up
           <TiArrowRight size={24} className="mt-1" />
         </button>
 

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../store/store";
 import { uploadStart, uploadSuccess } from "../store/slices/upload";
 import { uploads } from "../api/uploads";
+import toast from "react-hot-toast";
 
 const guidelines = [
   {
@@ -57,7 +58,9 @@ const CallingModule = () => {
     try {
       await uploads(file);
       dispatch(uploadSuccess(true));
+      toast.success("File Uploaded Successfully");
     } catch (err: unknown) {
+      toast.error("Failed to Upload File. Please try again");
       console.log(err);
     }
   };

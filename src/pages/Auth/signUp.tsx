@@ -34,8 +34,9 @@ const SignUp: React.FC = () => {
       const response = await signupUser(data);
       console.log(response, "RESPONSE");
       dispatch(signupSuccess(response));
-      toast.success("Sign-up successful!");
+      toast.success("Sign-up successful! Please Sign in");
       reset();
+      navigate("/");
     } catch (err: unknown) {
       //   dispatch(signupFailure(err.message));
       toast.error("Sign-up failed. Please try again");

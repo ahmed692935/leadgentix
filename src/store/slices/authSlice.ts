@@ -5,7 +5,6 @@ const initialState: AuthState = {
   user: null,
   loading: false,
   error: null,
-  
 };
 
 const authSlice = createSlice({
@@ -16,9 +15,9 @@ const authSlice = createSlice({
       state.loading = true;
       state.error = null;
     },
-    signupSuccess(state, action: PayloadAction<string>) {
+    signupSuccess(state) {
       state.loading = false;
-      state.user = action.payload;
+      // state.user = action.payload;
     },
     // signupFailure(state, action: PayloadAction<string>) {
     //   state.loading = false;
